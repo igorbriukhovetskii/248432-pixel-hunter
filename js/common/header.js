@@ -1,4 +1,4 @@
-import getElementFromTemplate from './../utils/getElementFromTemplate.js';
+import getElementFromTemplate from './../utils/getElementFromTemplate';
 import showGreeting from './../screens/greeting';
 
 // Шаблон блока с кнопкой возврата на экран приветствия

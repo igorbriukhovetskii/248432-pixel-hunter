@@ -1,7 +1,7 @@
 import getElementFromTemplate from './../utils/getElementFromTemplate';
 import renderScreen from '../utils/renderScreen';
 import {headerWithInfo} from './../common/header';
-import showGame2 from './game2';
+import showGameTwo from './game-two';
 import footer from './../common/footer';
 
 const template = `
@@ -47,7 +47,7 @@ const template = `
     </div>
   </div>`;
 
-const game1 = {
+const gameOne = {
   init() {
     this.element = getElementFromTemplate(template);
     this.form = this.element.querySelector(`form`);
@@ -62,7 +62,7 @@ const game1 = {
     const checkedRadios = this.questions.filter((radio) => radio.checked);
 
     if (checkedRadios.length === 2) {
-      showGame2();
+      showGameTwo();
     }
   },
   addListeners() {
@@ -71,4 +71,4 @@ const game1 = {
   }
 };
 
-export default () => renderScreen(headerWithInfo, game1, footer);
+export default () => renderScreen(headerWithInfo, gameOne, footer);

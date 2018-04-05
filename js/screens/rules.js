@@ -1,7 +1,7 @@
-import getElementFromTemplate from './../utils/getElementFromTemplate.js';
+import getElementFromTemplate from './../utils/getElementFromTemplate';
 import renderScreen from '../utils/renderScreen';
 import {headerWithInfo} from '../common/header';
-import showGame1 from './game1';
+import showGameOne from './game-one';
 import footer from './../common/footer';
 
 const template = `
@@ -37,7 +37,7 @@ const rules = {
     evt.preventDefault();
 
     if (this.inputField.value) {
-      showGame1();
+      showGameOne();
     }
   },
   addListeners() {

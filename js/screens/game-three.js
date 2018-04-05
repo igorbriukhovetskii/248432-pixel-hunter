@@ -34,7 +34,7 @@ const template = `
     </div>
   </div>`;
 
-const game3 = {
+const gameThree = {
   init() {
     this.element = getElementFromTemplate(template);
     this.images = [...this.element.querySelectorAll(`.game__option`)];
@@ -53,4 +53,4 @@ const game3 = {
   }
 };
 
-export default () => renderScreen(headerWithInfo, game3, footer);
+export default () => renderScreen(headerWithInfo, gameThree, footer);
